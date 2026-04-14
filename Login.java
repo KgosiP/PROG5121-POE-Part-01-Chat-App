@@ -9,7 +9,7 @@ package com.chatapp;
  *@Kgosi.P
  */
 
-// adding the class variables
+// adding the class variables.
 public class Login {
     private String username;
     private String password;
@@ -17,7 +17,7 @@ public class Login {
     private String firstName;
     private String lastName;
     
-    // adding a constructor 
+    // adding a constructor to allow for user to login & register. 
     public Login(String firstName, String lastName, String username, String password, String cellPhoneNumber){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,13 +27,13 @@ public class Login {
         
     }
     
-    // adding a class that will check the username used
+    // adding a class that will check the username.
     public boolean checkUserName() {
         return username.contains("_") && username.length() <= 5;
     
     }
     
-    //adding a clas that will check  the validity of password
+    //adding a class that will check the password's validity.
     public boolean checkPasswordComplexity() {
         if (password.length() < 8){
             return false;
@@ -43,7 +43,7 @@ public class Login {
         boolean hasNumber = false;
         boolean hasSpecial = false;
         
-        //statements that will ensure that the necessary characters are added
+        //statements that will ensure that the necessary characters are added.
         for(int i = 0; i < password.length(); i++) {
             char c = password.charAt(i);
             
@@ -70,7 +70,7 @@ public class Login {
         return cellPhoneNumber.matches("\\+\\d{1,3}\\d{10}");
         }
     
-    // class checks each condition one at a time.
+    // classes will check that each condition is met one by one.
     public String registerUser() {
          if (!checkUserName()) {
              return "Username is not correctly formatted; please ensure that your username contains an underscore and is more than five characters in length.";
