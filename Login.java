@@ -43,7 +43,7 @@ public class Login {
         boolean hasNumber = false;
         boolean hasSpecial = false;
         
-        //statements that will ensure that the necessary characters are added.
+        //statements that ensure that the necessary characters are used.
         for(int i = 0; i < password.length(); i++) {
             char c = password.charAt(i);
             
