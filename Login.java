@@ -91,7 +91,7 @@ public class Login {
             
      }
     
-    // verification class (ensures what is stored & what user types matches).
+    // verification class (ensures that what the user types in & what is stored matches).
     public boolean loginUser(String enterdUsername, String enterdPassword) {
         return enterdUsername.equals(username) && enterdPassword.equals(password);
         
