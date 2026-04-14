@@ -97,7 +97,7 @@ public class Login {
         
     }
     
-    // class builds welcome message usin the the stored firstname and lastname.
+    // class builds a welcome message using the user's firstname and lastname.
     public String returnLoginStatus(String enteredUsername, String enteredPassword) {
         if (loginUser(enteredUsername, enteredPassword)) {
             return "welcome " + firstName + " " + lastName + " it is great to see you again. ";
