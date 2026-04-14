@@ -46,6 +46,7 @@ public class ChatApp {
         System.out.println(user.returnLoginStatus(enteredUsername, enteredPassword));
         
         input.close();
+        // registration feature complete
       
     }
     
